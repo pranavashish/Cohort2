@@ -85,17 +85,26 @@
 //   console.log(arr[i]);
 // }
 
-function sum(num1, num2, func) {
-  let ans = num1 + num2;
-  func(ans);
+// function sum(num1, num2, func) {
+//   let ans = num1 + num2;
+//   func(ans);
+// }
+
+// function sum1(data) {
+//   console.log("Result of the sum is : " + data);
+// }
+
+// function sum2(data) {
+//   console.log("Sum's result is : " + data);
+// }
+
+// sum(1, 2, sum1);
+
+// ************** S E T  T I M E O U T **************
+
+function greet() {
+  console.log("Hello World");
 }
 
-function sum1(data) {
-  console.log("Result of the sum is : " + data);
-}
-
-function sum2(data) {
-  console.log("Sum's result is : " + data);
-}
-
-sum(1, 2, sum1);
+// setTimeout(greet, 1 * 3000);
+setInterval(greet, 1 * 3000);
