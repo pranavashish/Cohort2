@@ -64,23 +64,38 @@
 //   }
 // }
 
-let arr = [1, 2, 4, 5, 6, 7, 8, 9, 10];
+// let arr = [1, 2, 4, 5, 6, 7, 8, 9, 10];
 
-let temp;
+// let temp;
 
-let start = 0;
-let end = arr.length - 1;
-while (start < end) {
-  // Swap elements at start and end indices
-  let temp = arr[start];
-  arr[start] = arr[end];
-  arr[end] = temp;
+// let start = 0;
+// let end = arr.length - 1;
+// while (start < end) {
+//   // Swap elements at start and end indices
+//   let temp = arr[start];
+//   arr[start] = arr[end];
+//   arr[end] = temp;
 
-  // Move indices towards the center
+// Move indices towards the center
 
-  start++;
-  end--;
+//   start++;
+//   end--;
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+function sum(num1, num2, func) {
+  let ans = num1 + num2;
+  func(ans);
 }
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
+
+function sum1(data) {
+  console.log("Result of the sum is : " + data);
 }
+
+function sum2(data) {
+  console.log("Sum's result is : " + data);
+}
+
+sum(1, 2, sum1);
