@@ -102,9 +102,9 @@
 
 // ************** S E T  T I M E O U T **************
 
-function greet() {
-  console.log("Hello World");
-}
+// function greet() {
+//   console.log("Hello World");
+// }
 
-// setTimeout(greet, 1 * 3000);
-setInterval(greet, 1 * 3000);
+// // setTimeout(greet, 1 * 3000);
+// setInterval(greet, 1 * 3000);
