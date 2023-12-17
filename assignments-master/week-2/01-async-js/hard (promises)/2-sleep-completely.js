@@ -5,6 +5,13 @@
  */
 
 function sleep(milliseconds) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, milliseconds);
+  });
 }
+console.log(12);
+sleep(3000).then(() => {
+  console.log("Shayad ruka hai");
+});
 
 module.exports = sleep;
